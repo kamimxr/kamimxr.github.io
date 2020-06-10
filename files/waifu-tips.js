@@ -90,14 +90,14 @@ $('.waifu-tool .fui-photo').click(function (){
         } else {
             text = '嗨~ 快来逗我玩吧！';
         }
-	text = '<br><span style="color:#0099cc;">我是神之右大臣的超级可爱小助手。<br> 有什么想学内容的可以看看主人的博客哦。<br>我会在旁边陪着你的。 </span>';
+	text = '<br><span style="color:#9945ff;">我是神之右大臣的超级可爱小助手。<br> 有什么想学内容的可以看看主人的博客哦。<br>我会在旁边陪着你的。 </span>';
     } else {
         if(document.referrer !== ''){
             var referrer = document.createElement('a');
             referrer.href = document.referrer;
             var domain = referrer.hostname.split('.')[1];
             if (window.location.hostname == referrer.hostname) {
-                text = '欢迎阅读<span style="color:#0099cc;">『' + document.title.split(' - ')[0] + '』<br> 对于文章有什么疑问或者建议在评论区评论就可以啦。<br> 主人看到一定会回复的~ </span>';
+                text = '<span style="color:#9945ff;">欢迎阅读 </span><span style="color:#0099cc;">『' + document.title.split(' - ')[0] + '』 </span><br> <span style="color:#9945ff;">对于文章有什么疑问或者建议在评论区评论就可以啦。<br> 主人看到一定会回复的~ </span>';
             } else if (domain == 'baidu') {
                 text = 'Hello!<br>你知道AK王<strong>G<font color=red>uoqingshuo</font></strong>巨佬吗？';
             } else if (domain == 'so') {
@@ -108,7 +108,7 @@ $('.waifu-tool .fui-photo').click(function (){
                 text = 'Hello! 你知道那位<strong>L<font color=red>ishangze</font></strong>又被阿掉了吗？';
             }
         } else {
-            text = '欢迎阅读<span style="color:#0099cc;">『' + document.title.split(' - ')[0] + '』<br> 有什么问题可以联系神之右大臣哦 </span> ';
+            text = '<span style="color:#9945ff;">欢迎阅读 </span><span style="color:#0099cc;">『' + document.title.split(' - ')[0] + '』 </span><br> <span style="color:#9945ff;">有什么问题可以联系神之右大臣哦 </span> ';
         }
     }
     showMessage(text, 6000);

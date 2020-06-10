@@ -66,11 +66,12 @@ $('.waifu-tool .fui-photo').click(function (){
 
 (function (){
     var text;
-    var SiteIndexUrl = 'https://www.cnblogs.com/kamimxr/';  // 手动指定主页
+    var SiteIndexUrl = 'https://www.cnblogs.com/kamimxr';  // 手动指定主页
     //var SiteIndexUrl = window.location.protocol+'//'+window.location.hostname+'/';  // 自动获取主页
     
     if (window.location.href == SiteIndexUrl) {      // 如果是主页
         var now = (new Date()).getHours();
+	text = '我是神之右大臣大人的小助手，有什么想学的可以看看大人的博客哦。';
         if (now > 23 || now <= 5) {
             text = '你是夜猫子呀？这么晚还不睡觉，明天起的来嘛';
         } else if (now > 5 && now <= 7) {

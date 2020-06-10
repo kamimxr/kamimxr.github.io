@@ -66,8 +66,8 @@ $('.waifu-tool .fui-photo').click(function (){
 
 (function (){
     var text;
-    //var SiteIndexUrl = 'https://www.fghrsh.net/';  // 手动指定主页
-    var SiteIndexUrl = window.location.protocol+'//'+window.location.hostname+'/';  // 自动获取主页
+    var SiteIndexUrl = 'https://www.cnblogs.com/kamimxr/';  // 手动指定主页
+    //var SiteIndexUrl = window.location.protocol+'//'+window.location.hostname+'/';  // 自动获取主页
     
     if (window.location.href == SiteIndexUrl) {      // 如果是主页
         var now = (new Date()).getHours();
@@ -96,7 +96,7 @@ $('.waifu-tool .fui-photo').click(function (){
             referrer.href = document.referrer;
             var domain = referrer.hostname.split('.')[1];
             if (window.location.hostname == referrer.hostname) {
-                text = '欢迎阅读<span style="color:#0099cc;">『' + document.title.split(' - ')[0] + '』</span>';
+                text = '欢迎阅读<span style="color:#0099cc;">『' + document.title.split(' - ')[0] + '』<br> 对于文章有什么疑问或者建议在评论区评论就可以啦。 </span>';
             } else if (domain == 'baidu') {
                 text = 'Hello!<br>你知道AK王<strong>G<font color=red>uoqingshuo</font></strong>巨佬吗？';
             } else if (domain == 'so') {
